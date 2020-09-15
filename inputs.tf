@@ -10,8 +10,8 @@ variable "instance_name" {
 
 variable "instance_count" {
   type = string
-  default = "1"
   description = "number of instances to launch"
+  default = "1"
 }
 
 variable "image" {
@@ -21,16 +21,18 @@ variable "image" {
 
 variable "flavor" {
   type = string
-  default = "m1.tiny"
   description = "flavor or size of instance to launch"
+  default = "m1.tiny"
 }
 
 variable "keypair" {
   type = string
   description = "keypair to use when launching"
+  default = ""
 }
 
 variable "power_state" {
   type = string
   description = "power state of instance"
+  default = "active"
 }

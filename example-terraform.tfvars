@@ -1,0 +1,5 @@
+instance_name = "my-instance"
+instance_count = "1"
+flavor = "m1.tiny"
+keypair = "my-keypair"
+image = "xxxxx-xxxx-xxxx-xxxxx"
