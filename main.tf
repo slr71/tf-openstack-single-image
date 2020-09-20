@@ -23,6 +23,7 @@ resource "openstack_compute_instance_v2" "os_instances" {
 resource "openstack_networking_floatingip_v2" "os_floatingips" {
   count = var.power_state == "active" ? var.instance_count : 0
   pool = "public"
+  subnet_id = var.external_subnet_uuid
   description = "floating ip for ${var.instance_name}, ${count.index}/${var.instance_count}"
 }
 

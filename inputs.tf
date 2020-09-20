@@ -36,3 +36,8 @@ variable "power_state" {
   description = "power state of instance"
   default = "active"
 }
+
+variable "external_subnet_uuid" {
+  type = string
+  description = "subnet of the external uuid for floating ip"
+}
