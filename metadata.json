@@ -1,0 +1,34 @@
+{
+  "name":         "single image openstack instances",
+  "author":       "Edwin Skidmore",
+  "author_email": "edwin@cyverse.org",
+  "description":  "launches a single image on a single cloud",
+  "cacao_type":   "openstack_terraform",
+  "cacao_post_tasks": {
+    "type": "ansible",
+    "location_type": "cacao_atmosphere_legacy"
+  },
+  "parameters": {
+    "instance_count": {
+      "default": 1,
+      "type": "integer"
+    },
+    "instance_name": {
+      "type": "string"
+    },
+    "flavor": {
+      "type": "cacao_provider_flavor"
+    },
+    "keypair": {
+      "type": "string"
+    },
+    "image": {
+      "type": "cacao_provider_image"
+    },
+    "power_state": {
+      "type": "string",
+      "default": "active",
+      "enum": ["active", "shutoff", "suspend"]
+    }
+  }
+}
