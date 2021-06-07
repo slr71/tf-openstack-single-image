@@ -3,11 +3,14 @@
   "author":       "Edwin Skidmore",
   "author_email": "edwin@cyverse.org",
   "description":  "launches a single image on a single cloud",
-  "cacao_type":   "openstack_terraform",
-  "cacao_post_tasks": {
-    "type": "ansible",
-    "location_type": "cacao_atmosphere_legacy"
-  },
+  "provider_type": "openstack",
+  "template_format": "terraform",
+  "cacao_post_tasks": [
+    {
+      "type": "ansible",
+      "location_type": "cacao_atmosphere_legacy"
+    }
+  ],
   "parameters": {
     "instance_count": {
       "default": 1,
