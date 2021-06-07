@@ -3,8 +3,7 @@
   "author":       "Edwin Skidmore",
   "author_email": "edwin@cyverse.org",
   "description":  "launches a single image on a single cloud",
-  "provider_type": "openstack",
-  "template_format": "terraform",
+  "template_type": "openstack_terraform",
   "cacao_post_tasks": [
     {
       "type": "ansible",
