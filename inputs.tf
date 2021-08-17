@@ -1,6 +1,6 @@
 variable "project" {
   type = string
-  description = "project"
+  description = "project name"
 }
 
 variable "username" {
