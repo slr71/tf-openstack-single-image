@@ -6,6 +6,10 @@ terraform {
   }
 }
 
+provider "openstack" {
+  tenant_id = var.project
+}
+
 resource "openstack_compute_instance_v2" "os_instances" {
   name = var.instance_name
   count = var.instance_count
