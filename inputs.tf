@@ -1,3 +1,8 @@
+variable "project" {
+  type = string
+  description = "project name"
+}
+
 variable "username" {
   type = string
   description = "username"

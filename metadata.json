@@ -21,6 +21,9 @@
     "flavor": {
       "type": "cacao_provider_flavor"
     },
+    "project": {
+      "type": "cacao_provider_project"
+    },
     "keypair": {
       "type": "string"
     },
