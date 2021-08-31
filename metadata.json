@@ -13,27 +13,42 @@
   "parameters": {
     "instance_count": {
       "default": 1,
-      "type": "integer"
+      "type": "integer",
+      "ui_label": "# of Instances",
+      "description": "# of instances to launch"
     },
     "instance_name": {
-      "type": "string"
+      "type": "string",
+      "ui_label": "Name of instance",
+      "description": "Name of instance"
     },
     "flavor": {
-      "type": "cacao_provider_flavor"
+      "type": "cacao_provider_flavor",
+      "ui_label": "Flavor",
+      "description": "Type of instance"
     },
     "project": {
-      "type": "cacao_provider_project"
+      "type": "cacao_provider_project",
+      "ui_label": "Project ID",
+      "description": "ID of OpenStack Project"
     },
     "keypair": {
-      "type": "string"
+      "type": "string",
+      "ui_label": "Key-pair",
+      "description": "Key-pair for instance access"
+
     },
     "image": {
-      "type": "cacao_provider_image"
+      "type": "cacao_provider_image",
+      "ui_label": "Boot image",
+      "description": "Boot image"
     },
     "power_state": {
       "type": "string",
       "default": "active",
-      "enum": ["active", "shutoff", "suspend"]
+      "enum": ["active", "shutoff", "suspend"],
+      "ui_label": "Power state",
+      "description": "Power state"
     }
   }
 }
