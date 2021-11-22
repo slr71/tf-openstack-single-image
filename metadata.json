@@ -1,9 +1,10 @@
 {
-  "name":         "single image openstack instances",
-  "author":       "Edwin Skidmore",
-  "author_email": "edwin@cyverse.org",
-  "description":  "launches a single image on a single cloud",
+  "name":          "single image openstack instances",
+  "author":        "Edwin Skidmore",
+  "author_email":  "edwin@cyverse.org",
+  "description":   "launches a single image on a single cloud",
   "template_type": "openstack_terraform",
+  "purpose":       "instance",
   "cacao_post_tasks": [
     {
       "type": "ansible",
