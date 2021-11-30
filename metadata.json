@@ -4,7 +4,7 @@
   "author_email":  "edwin@cyverse.org",
   "description":   "launches a single image on a single cloud",
   "template_type": "openstack_terraform",
-  "purpose":       "instance",
+  "purpose":       "compute",
   "cacao_post_tasks": [
     {
       "type": "ansible",
